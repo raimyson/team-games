@@ -1,1 +1,1 @@
-# team-games-backend
+# team-games
