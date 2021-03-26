@@ -1,0 +1,16 @@
+{
+	"app": {
+		"projectName": "team-games-backend",
+		"port": 8090,
+		"base": "/api"
+	},
+	"mysql": {
+		"accenture" : {
+			"host": "localhost",
+            "port": 3306,
+            "database": "teamgames",
+			"username": "teamgames",
+			"password": "teamgames"
+		}
+	}
+}

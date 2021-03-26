@@ -1,0 +1,35 @@
+{
+  "name": "team-games-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear;NODE_ENV=dev nodemon app",
+    "start:hml": "clear;NODE_ENV=hml nodemon app",
+    "start:prd": "clear;NODE_ENV=prd nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raimyson/team-games"
+  },
+  "author": "Raimyson Aurelio Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "group-by": "0.0.1",
+    "mongoose": "^5.8.11",
+    "mysql": "^2.18.1",
+    "oracledb": "^3.1.0",
+    "path": "^0.12.7",
+    "q": "^1.5.1",
+    "redis": "^2.8.0",
+    "restify": "^8.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  }
+}

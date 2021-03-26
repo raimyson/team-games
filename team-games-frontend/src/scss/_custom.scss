@@ -1,0 +1,797 @@
+// Here you can add other styles
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home{
+    background-color: #eee;
+}
+
+.home .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 72%;
+    align-content: center;
+    margin: auto;
+    margin-top: 40px;
+}
+.home .row .col{
+    width: auto;
+}
+.home .cardMovingMotivator{
+    background-color: #fff;
+    width: 600px;
+    height: 294px;
+    background-image: url("/images/home/bg-card-movingmotivator.png");
+}
+
+.home .cardDelegationPoker{
+    background-color: #fff;
+    width: 600px;
+    height: 294px;
+    background-image: url("/images/home/bg-card-delegationpoker.png");
+}
+.home .cards .card .card-title {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home .cards .card .card-text {
+    width: 230px;
+    margin-top: 21px;
+}
+.home .cards .card .btn.btn-secondary {
+    width: 220px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #02b7e6;
+    font-weight: bold;
+}
+
+
+.navbar-brand .navbar-brand-full {
+    height: 50px;
+    width: 150px;
+}
+
+.moving {
+    // background-image: url("/images/moving-motivators/moving-motivators-background.png");
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center; 
+
+    background: rgb(2,0,36);
+    background: linear-gradient(137deg, rgba(2,0,36,1) 0%, #02b7e6 40%, rgba(255,255,255,1) 100%);
+}
+
+.moving .principal{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    min-height: 700px;
+}
+
+.moving.options .principal{
+    width: 70%;
+    background-color: #fff;
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.moving.options .principal .notice h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.moving.options .principal .action {
+    margin-top: 60px;
+}
+
+.moving .row{
+    display: flex;
+    margin: auto;
+    max-width: 600px;
+}
+
+.moving .row .card {
+    margin-bottom: 1.5rem;
+    min-height: 190px;
+}
+
+.moving.options .row{
+    border-width: 2px;
+}
+.moving.options .row .create{
+    border-color: #3123d7;
+}
+.moving.options .row .play{
+    border-color: #d72323;
+}
+
+.moving.options .row svg{
+    font-size: 25px;
+    margin-top: -5px;
+}
+.moving.options .row .create svg{
+    color: #3123d7;
+}
+.moving.options .row .play svg{
+    color:#d72323;
+}
+
+.moving.options .row h4{
+    display: inline;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.moving.options .row .create h4{
+    color: #3123d7;
+}
+.moving.options .row .play h4{
+    color: #d72323;
+}
+
+.moving.options .row button{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15px;
+    width: 85%;
+}
+.moving.options .row .create button{
+    background-color: #3123d7;
+}
+.moving.options .row .play button{
+    background-color: #d72323;
+}
+
+.moving.create .row .create{
+    border-color: #069330;
+    width: 350px;
+}
+
+.moving.create .row button{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.moving.create .row button{
+    background-color: #069330;
+}
+.moving.create .row label{
+    font-weight: bold;
+}
+.moving.create .row h4{
+    display: inline;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.moving.create .sucess .url {
+    display: block;
+    font-weight: bold;
+}
+
+.moving.create .sucess button {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.moving.room .principal{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+}
+
+.moving.room .player {
+    width: 90%;
+    height: 170px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.moving.room .player .block {
+    width: 88%;
+    height: 180px;
+    position: absolute;
+    z-index: 3;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.moving.room .player .name {
+    font-weight: bold;
+    font-size: 20px;
+    background: #eee none repeat scroll 0% 0%;
+    text-transform: uppercase;
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: -15px;
+    position: relative;
+    z-index: 1;
+}
+
+.moving.room .player .name svg {
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.moving.room .player .instruction {
+    background: #eee none repeat scroll 0% 0%;
+    height: 20px;
+    position: relative;
+}
+.moving.room .player .instruction .left {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    background: #02b7e6;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+.moving.room .player .instruction .left:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #eee;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.moving.room .player .instruction .left:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #02b7e6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.moving.room .player .instruction .right {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    background: #02b7e6;
+    right: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+.moving.room .player .instruction .right:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #eee;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.moving.room .player .instruction .right:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #02b7e6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.moving.room .player .dataplayer{
+    width: 100%;
+    display: block;
+}
+.moving.room .player .cards{
+    width: 100%;
+    display: block;
+}
+
+.moving.room .player .card{
+    width: 10%;
+    height: 180px;
+    margin-top: 30px;
+    min-width: 148px;
+}
+
+.card.card_curiosity{
+    background-image: url("/images/moving-motivators/curiosity.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_honor{
+    background-image: url("/images/moving-motivators/honor.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_acceptance{
+    background-image: url("/images/moving-motivators/acceptance.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_freedom{
+    background-image: url("/images/moving-motivators/freedom.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_goal{
+    background-image: url("/images/moving-motivators/goal.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_mastery{
+    background-image: url("/images/moving-motivators/mastery.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_order{
+    background-image: url("/images/moving-motivators/order.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_power{
+    background-image: url("/images/moving-motivators/power.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_relatedness{
+    background-image: url("/images/moving-motivators/relatedness.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+.card.card_status{
+    background-image: url("/images/moving-motivators/status.png");
+    background-repeat: no-repeat;
+    background-size:contain;;
+}
+
+
+.moving.room .player .card .title{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    top: 1px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    left: 0;
+    color: white;
+    font-family: Courier New;
+}
+
+.moving.room .player .card .text {
+    font-size: 7px;
+    top: 64%;
+    position: absolute;
+    line-height: 1.1;
+    width: 80%;
+    text-align: center;
+}
+
+.moving.room .player .card .command {
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    width: 90%;
+}
+
+.moving.room .player .card .command svg {
+    cursor: pointer;
+    color: #cccccc;
+}
+.moving.room .player .card .command .zoom {
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    color: black;
+}
+.moving.room .player .card .command .sad.active {
+    color: red;
+}
+.moving.room .player .card .command .normal.active {
+    color: yellow;
+}
+.moving.room .player .card .command .happy.active {
+    color: green;
+}
+
+.card.modal-body {
+    position: fixed;
+    height: 400px;
+    background-size: cover;
+    width: 400px;
+    padding-top: 10px;
+}
+.card.modal-body .title {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    left: 0;
+    color: white;
+    font-family: Courier New;
+    width: 100%;
+}
+.card.modal-body .text {
+    font-size: 17px;
+    top: 78%;
+    position: absolute;
+    line-height: 1.1;
+    width: 88%;
+    text-align: center;
+    padding-left: 15px;
+}
+
+
+.delegation {
+    // background-image: url("/images/delegation-motivators/delegation-motivators-background.png");
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center; 
+
+    background: rgb(2,0,36);
+    background: linear-gradient(137deg, rgba(2,0,36,1) 0%, #02b7e6 40%, rgba(255,255,255,1) 100%);
+}
+
+.delegation .principal{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    min-height: 700px;
+}
+
+.delegation.options .principal{
+    width: 70%;
+    background-color: #fff;
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.delegation.options .principal .notice h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.delegation.options .principal .action {
+    margin-top: 60px;
+}
+
+.delegation .row{
+    display: flex;
+    margin: auto;
+    max-width: 600px;
+}
+
+.delegation .row .card {
+    margin-bottom: 1.5rem;
+    min-height: 190px;
+}
+
+.delegation.options .row{
+    border-width: 2px;
+}
+.delegation.options .row .create{
+    border-color: #3123d7;
+}
+.delegation.options .row .play{
+    border-color: #d72323;
+}
+
+.delegation.options .row svg{
+    font-size: 25px;
+    margin-top: -5px;
+}
+.delegation.options .row .create svg{
+    color: #3123d7;
+}
+.delegation.options .row .play svg{
+    color:#d72323;
+}
+
+.delegation.options .row h4{
+    display: inline;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.delegation.options .row .create h4{
+    color: #3123d7;
+}
+.delegation.options .row .play h4{
+    color: #d72323;
+}
+
+.delegation.options .row button{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15px;
+    width: 85%;
+}
+.delegation.options .row .create button{
+    background-color: #3123d7;
+}
+.delegation.options .row .play button{
+    background-color: #d72323;
+}
+
+.delegation.create .row .create{
+    border-color: #069330;
+    width: 350px;
+}
+
+.delegation.create .row button{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.delegation.create .row button{
+    background-color: #069330;
+}
+.delegation.create .row label{
+    font-weight: bold;
+}
+.delegation.create .row h4{
+    display: inline;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.delegation.create .sucess .url {
+    display: block;
+    font-weight: bold;
+}
+
+.delegation.create .sucess button {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.delegation.room {
+    background: #eee;
+}
+
+.delegation.room .divTable{
+	display: table;
+	width: 85%;
+    margin-top: 40px;
+}
+.delegation.room .divTableRow {
+	display: table-row;
+}
+.delegation.room .divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.delegation.room .divTableCell, .divTableHead {
+	border: 2px solid #fff;
+	display: table-cell;
+	padding: 3px 10px;
+}
+
+.delegation.room .divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.delegation.room .divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.delegation.room .divTableBody {
+	display: table-row-group;
+}
+
+.delegation.room .divTableCell.command{
+    width: 300px;
+    border: 0px;
+    padding: 0px 5px;
+}
+
+.delegation.room .divTableCell.command .nav.nav-tabs {
+    margin-top: -25px;
+}
+.delegation.room .divTableCell.command .actions {
+    font-size: 14px;
+    font-weight: bold;
+}
+.delegation.room .divTableCell.command .actions .action {
+    cursor: pointer;
+    margin-top: 10px;
+}
+.delegation.room .divTableCell.command .actions .action svg {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.delegation.room .divTableCell.command .tab-pane.box_item_component.players.active {
+    max-height: 220px;
+    min-height: 220px;
+    overflow-y: auto;
+}
+
+.modalCreateDecision .modal-title {
+    width: 100%;
+}
+.modalCreateDecision .alert.alert-danger {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.modalCreateDecision .title {
+    font-weight: bold;
+}
+.delegation.room .divTableRow.lightgray {
+    background-color: lightgray;
+}
+.delegation.room .divTableRow.active {
+    background-color: #02b7e6;
+}
+
+
+.delegation.room .box_item_component .outer {
+    border-top: none;
+    min-width: 90px;
+    max-width: 140px;
+    overflow: hidden;
+    display: inline-block;
+}
+.delegation.room .box_item_component .item {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+    background-color: #005577;
+}
+.delegation.room .box_item_component .item.red {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+    background-color: #700;
+}
+.delegation.room .box_item_component .grabber {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 6px;
+}
+
+.delegation.room .divTableCell.card {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 240px;
+    width: 170px;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.delegation.room .divTableCell.card.advise {
+    background-image: url("/images/delegation-poker/dp-card-advise.png");
+}
+.delegation.room .divTableCell.card.agree {
+    background-image: url("/images/delegation-poker/dp-card-agree.png");
+}
+.delegation.room .divTableCell.card.consult {
+    background-image: url("/images/delegation-poker/dp-card-consult.png");
+}
+.delegation.room .divTableCell.card.delegate {
+    background-image: url("/images/delegation-poker/dp-card-delegate.png");
+}
+.delegation.room .divTableCell.card.inquire {
+    background-image: url("/images/delegation-poker/dp-card-inquire.png");
+}
+.delegation.room .divTableCell.card.sell {
+    background-image: url("/images/delegation-poker/dp-card-sell.png"), linear-gradient( to right, transparent, transparent 2%, #fff 2%, #fff 98%, transparent 98% )
+}
+.delegation.room .divTableCell.card.tell {
+    background-image: url("/images/delegation-poker/dp-card-tell.png"), linear-gradient( to right, transparent, transparent 2%, #fff 2%, #fff 98%, transparent 98% )
+}
+.delegation.room .divTableCell.card.tell.select {
+    background-image: url("/images/delegation-poker/dp-card-tell.png"), linear-gradient( to right, transparent, transparent 2%, lightyellow 2%, lightyellow 98%, transparent 98% )
+}
+
+.delegation.room .divTableCell.card .title {
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.delegation.room .divTableCell.card .text {
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    width: 110px;
+    margin-left: 25px;
+    position: absolute;
+    bottom: 23px;
+}
+
+.delegation.room .divTableCell.decision div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.delegation.room .divTableCell.decision {
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    position: relative;
+}
+.delegation.room .divTableCell.decision svg {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.delegation.room .divTableCell.select {
+    padding: 0;
+}
+
+.delegation.room .divTableCell.select .box{
+    width: 160px;
+    min-height: 50px;
+}
+
+.delegation.room .divTableCell.select .outer {
+    border-top: none;
+    min-width: 90px;
+    max-width: 140px;
+    overflow: hidden;
+    display: inline-block;
+}
+.delegation.room .divTableCell.select .item {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+    background-color: #005577;
+}
+.delegation.room .divTableCell.select .item.red {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    background-color: #700;
+}
+.delegation.room .divTableCell.select .grabber {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 6px;
+}
+  
+  // ie11 floating footer temp fix, react only
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #root {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

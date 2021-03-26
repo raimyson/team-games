@@ -1,0 +1,11 @@
+.DS_Store
+logs/*.log*
+coverage/
+test/reports/
+node_modules/
+.nyc_output/
+.sonarlint/
+npm-debug.log
+.scannerwork/*
+appd_*.log
+package-lock.json

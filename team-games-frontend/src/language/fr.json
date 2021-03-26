@@ -1,0 +1,11 @@
+{
+    "card.number": "Environ {data} personnes âgées de sexe masculin vivaient en 2018 dans le monde entier et pesaient environ {customNumber}",
+    "card.string": "Je pensais acheter un nouveau véhicule en {date}, mais j'ai découvert que je devais déjà {money} à la banque.",
+    "card.date": "Sur {data}, la toute première voiture Mustang a été présentée au public en Amérique. Qui est {customDate}.",
+    "card.plural": "Bonjour, vous avez {unreadCount, number} {unreadCount, plural, one {message non lu dans votre boîte aux lettres. } other {messages dans votre boîte aux lettres, veuillez lire.}}",
+    "card.type":"react-intl exemple de manipulation {type}.",
+    "title.number": "nombre",
+    "title.date": "date",
+    "title.string": "chaîne",
+    "title.plural": "plurielle"
+}   

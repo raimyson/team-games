@@ -1,0 +1,11 @@
+{
+    "card.number": "Alrededor de {data} personas mayores de sexo masculino vivieron en 2018 en todo el mundo y pesan sobre {customNumber}",
+    "card.string": "Estaba pensando en comprar un vehículo nuevo en {date}, pero descubrí que ya le debía {money} al banco.",
+    "card.date": "En {data}, el primer automóvil Mustang se presentó al público en Estados Unidos. Que es {customDate}.",
+    "card.plural": "Hola, tienes {unreadCount, number} {unreadCount, plural, one {mensaje no leído en tu casilla de correo. } other {mensajes en su casilla de correo, lea.}}",
+    "card.type":"react-intl ejemplo para manejar {type}.",
+    "title.number": "número",
+    "title.date": "fecha",
+    "title.string": "cuerda",
+    "title.plural": "plural"
+}   
