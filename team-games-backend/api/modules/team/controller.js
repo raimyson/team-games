@@ -19,8 +19,7 @@ class TeamController {
 
     async findAll(req, res, next) {
         console.log(`TeamController - findAll - ${req.params}`);
-        const team = new teamRepository();
-        const r = await team.findAll();
+        const r = {msg: 'TeamController - findAll'};
         res.send(200, r);
         return next();
     }

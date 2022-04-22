@@ -5,6 +5,8 @@ import movingMotivatorsByRoom from './movingmotivators/movingMotivatorsByRoom';
 import enterMovingMotivators from './movingmotivators/enterMovingMotivators';
 import updateMovingMotivators from './movingmotivators/updateMovingMotivators';
 import removeMovingMotivators from './movingmotivators/removeMovingMotivators';
+import socketMovingMotivators from './movingmotivators/socketMovingMotivators';
+
 
 import createDelegationPoker from './delegationpoker/createDelegationPoker';
 import delegationPokerByRoom from './delegationpoker/delegationPokerByRoom';
@@ -20,6 +22,7 @@ export default combineReducers({
     enterMovingMotivators,
     updateMovingMotivators,
     removeMovingMotivators,
+    socketMovingMotivators,
     
     createDelegationPoker,
     delegationPokerByRoom,

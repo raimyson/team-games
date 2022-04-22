@@ -61,7 +61,7 @@ class Home extends React.Component {
 								</Link>
 							</Card>
 						</Col>
-						<Col className="cards">
+						{/*<Col className="cards">
 							<Card body className="cardDelegationPoker">
 								<CardTitle><FormattedMessage id="home.card.delegationpoker.title" /></CardTitle>
 								<CardText><FormattedMessage id="home.card.delegationpoker.text" /></CardText>
@@ -69,7 +69,7 @@ class Home extends React.Component {
 									<Button><FormattedMessage id="home.card.delegationpoker.button" /></Button>
 								</Link>
 							</Card>
-						</Col>
+						</Col>*/}
 					</Row>
 				</div>
 			</DefaultLayout>

@@ -17,7 +17,7 @@ const {
 
 server.post(`${full}/findById`, [middlewares.notEmptyBody], Factory.build(Controller, 'findById'));
 server.post(`${full}/findByName`, [middlewares.notEmptyBody], Factory.build(Controller, 'findByName'));
-server.post(`${full}/findAll`, [], Factory.build(Controller, 'findAll'));
+server.get(`${full}/findAll`, [], Factory.build(Controller, 'findAll'));
 server.post(`${full}/findByUser`, [middlewares.notEmptyBody], Factory.build(Controller, 'findByUser'));
 server.post(`${full}/create`, [middlewares.notEmptyBody], Factory.build(Controller, 'create'));
 server.post(`${full}/update`, [middlewares.notEmptyBody], Factory.build(Controller, 'update'));

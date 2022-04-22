@@ -103,7 +103,7 @@ class MovingMotivatorsRepository {
                     if (rs.room.visibility == 1 || person.email) {
                         rs.admin = true;
                     } else {
-                        rs.people = [newperson];
+                        rs.people = [person];
                     }
                 }
             }

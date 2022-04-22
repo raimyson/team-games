@@ -3,7 +3,7 @@
 
 // const Factory = require('../../config/factory');
 // const Controller = require('./controller');
-
+const { Server } = require("socket.io");
 const middlewares = require('../../middlewares');
 
 const {
@@ -23,3 +23,18 @@ server.post(`${full}/insertUserInRoom`, [middlewares.notEmptyBody], Factory.buil
 server.post(`${full}/deleteUserInRoom`, [middlewares.notEmptyBody], Factory.build(Controller, 'deleteUserInRoom'));
 server.post(`${full}/findByRoom`, [middlewares.notEmptyBody], Factory.build(Controller, 'findByRoom'));
 server.post(`${full}/enter`, [middlewares.notEmptyBody], Factory.build(Controller, 'enter'));
+
+
+const io = new Server(server, { path: `/api/io/movingmotivators/socket` });
+//const io = new Server(server);
+io.on('connection', (socket) => {
+    console.log('a user connected');
+
+    socket.on('chat message', (msg) => {
+        io.emit('chat message', msg);
+    });
+
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
+    });
+});

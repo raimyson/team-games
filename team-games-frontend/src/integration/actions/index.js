@@ -27,6 +27,13 @@ import {
 } from './movingmotivators/updateMovingMotivators';
 
 import {
+    movingMotivatorsBySocket,
+    MOVINGMOTIVATORS_SOCKET_LOADING,
+    MOVINGMOTIVATORS_SOCKET_SUCESS,
+    MOVINGMOTIVATORS_SOCKET_ERROR
+} from './movingmotivators/movingMotivatorsSocket';
+
+import {
     removePlayerMovingMotivators,
     MOVINGMOTIVATORS_REMOVE_LOADING,
     MOVINGMOTIVATORS_REMOVE_SUCESS,
@@ -117,6 +124,13 @@ const removeMovingMotivators = {
     MOVINGMOTIVATORS_REMOVE_ERROR
 };
 
+const movingMotivatorsSocket = {
+    movingMotivatorsBySocket,
+    MOVINGMOTIVATORS_SOCKET_LOADING,
+    MOVINGMOTIVATORS_SOCKET_SUCESS,
+    MOVINGMOTIVATORS_SOCKET_ERROR
+};
+
 const createDelegationPoker = {
     createRoomDelegationPoker,
     DELEGATIONPOKER_CREATE_LOADING,
@@ -172,6 +186,7 @@ export default {
     enterMovingMotivators,
     updateMovingMotivators,
     removeMovingMotivators,
+    movingMotivatorsSocket,
     createDelegationPoker,
     delegationPokerByRoom,
     enterDelegationPoker,

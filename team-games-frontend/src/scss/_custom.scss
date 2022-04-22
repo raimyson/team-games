@@ -49,6 +49,9 @@ body{
     font-weight: bold;
 }
 
+.app-header {
+    height: 60px;
+}
 
 .navbar-brand .navbar-brand-full {
     height: 50px;
@@ -78,6 +81,7 @@ body{
     display: block;
     padding-top: 40px;
     padding-left: 40px;
+    padding-right: 40px;
 }
 
 .moving.options .principal .notice h1 {
@@ -378,7 +382,7 @@ body{
 
 .moving.room .player .card .text {
     font-size: 7px;
-    top: 64%;
+    bottom: 43px;
     position: absolute;
     line-height: 1.1;
     width: 80%;
@@ -464,6 +468,7 @@ body{
     display: block;
     padding-top: 40px;
     padding-left: 40px;
+    padding-right: 40px;
 }
 
 .delegation.options .principal .notice h1 {
@@ -785,6 +790,10 @@ body{
     font-size: 14px;
     font-weight: bold;
     padding-right: 6px;
+}
+
+.modal-content {
+    border: 0;
 }
   
   // ie11 floating footer temp fix, react only

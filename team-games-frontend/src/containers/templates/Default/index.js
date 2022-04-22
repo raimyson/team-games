@@ -22,7 +22,7 @@ import navigation from '../../../utils/_nav';
 import {Loading} from '../../../components';
 
 // const DefaultAside = lazy(() => import('./Aside'));
-// const DefaultFooter = lazy(() => import('./Footer'));
+const DefaultFooter = lazy(() => import('./Footer'));
 const DefaultHeader = lazy(() => import('./Header'));
 // const {Loading} = lazy(() => import('../../../components/atoms/Loading'));
 
@@ -71,7 +71,7 @@ class DefaultLayout extends Component {
 				</div>
 				<AppFooter>
 					<Suspense fallback={this.loading()}>
-						{/* <DefaultFooter /> */}
+						<DefaultFooter />
 					</Suspense>
 				</AppFooter>
 			</div>

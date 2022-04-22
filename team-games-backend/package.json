@@ -22,11 +22,11 @@
     "group-by": "0.0.1",
     "mongoose": "^5.8.11",
     "mysql": "^2.18.1",
-    "oracledb": "^3.1.0",
     "path": "^0.12.7",
     "q": "^1.5.1",
     "redis": "^2.8.0",
-    "restify": "^8.5.1"
+    "restify": "^8.5.1",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

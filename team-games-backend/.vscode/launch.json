@@ -11,7 +11,8 @@
             "program": "${workspaceRoot}/app.js",
             "env": {
                 "NODE_ENV": "hml"
-            }
+            },
+            "runtimeExecutable": "/home/raimyson/.nvm/versions/node/v10.24.1/bin/node"
         },
         {
             "name": "Debugar - Produção",
